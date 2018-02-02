@@ -19,6 +19,9 @@ import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
+// Sudhir
+import { TemplateModule } from './template';
+// Sudhir
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -66,6 +69,9 @@ type StoreType = {
      * This is a simple example, a big app should probably implement some logic
      */
     ...environment.showDevModule ? [ DevModuleModule ] : [],
+    // Sudhir
+    TemplateModule
+    // Sudhir
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

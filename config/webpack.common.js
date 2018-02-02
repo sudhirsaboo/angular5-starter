@@ -222,6 +222,12 @@ module.exports = function (options) {
         isProd ? { ignore: [ 'mock-data/**/*' ] } : undefined
       ),
 
+      // Sudhir Material
+      new CopyWebpackPlugin([{
+        from: 'node_modules/@angular/material/prebuilt-themes/indigo-pink.css',
+        to: 'vendor/@angular/material/prebuilt-themes/indigo-pink.css'
+      }]),
+
       /*
       * Plugin: HtmlWebpackPlugin
       * Description: Simplifies creation of HTML files to serve your webpack bundles.

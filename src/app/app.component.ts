@@ -41,6 +41,11 @@ import { AppState } from './app.service';
          routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         DevModule
       </a>
+      <!-- Sudhir -->
+      <a  [routerLink]=" ['./template'] "
+      routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+     TemplateModule
+   </a>
     </nav>
 
     <main>
