@@ -5,7 +5,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { environment } from 'environments/environment';
 // Sudhir i18n
 import { enableProdMode, TRANSLATIONS, TRANSLATIONS_FORMAT, LOCALE_ID } from '@angular/core';
-import { TRANSLATION } from './locale/messages-en';
+import { TRANSLATION_EN as TRANSLATION } from './resources/i18n/messages.en';
 
 // Sudhir
 

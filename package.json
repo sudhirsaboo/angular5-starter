@@ -80,9 +80,10 @@
     "webdriver:update": "node ./node_modules/protractor/bin/webdriver-manager update",
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js",
-
-    "i18n:extract": "ng-xi18n  "
-
+    "i18n:extract": "ng-xi18n",
+    "i18n:create": "gulp i18n-init --languages",
+    "i18n:update": "gulp i18n-update",
+    "i18n:compile": "gulp i18n-xlf2ts"
   },
   "dependencies": {
     "@angular/animations": "~5.1.0",
@@ -95,6 +96,7 @@
     "@angular/platform-server": "~5.1.0",
     "@angular/router": "~5.1.0",
     "core-js": "^2.5.1",
+    "gulp": "^3.9.1",
     "http-server": "^0.10.0",
     "ie-shim": "^0.1.0",
     "reflect-metadata": "^0.1.10",
@@ -126,6 +128,11 @@
     "file-loader": "^0.11.1",
     "find-root": "^1.0.0",
     "gh-pages": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-modify-file": "^0.1.0",
+    "gulp-remove-empty-lines": "0.0.8",
+    "gulp-rename": "^1.2.2",
     "html-webpack-plugin": "^2.28.0",
     "imports-loader": "^0.7.1",
     "inline-manifest-webpack-plugin": "^3.0.1",
@@ -145,6 +152,7 @@
     "optimize-js-plugin": "0.0.4",
     "parse5": "^3.0.2",
     "preload-webpack-plugin": "^1.2.2",
+    "pretty-data": "^0.40.0",
     "protractor": "^5.1.1",
     "raw-loader": "0.5.1",
     "rimraf": "~2.6.1",
