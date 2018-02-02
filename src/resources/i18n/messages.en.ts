@@ -5,6 +5,7 @@ export const TRANSLATION_EN = `<?xml version="1.0" encoding="UTF-8" ?>
     <body>
       <trans-unit id="ae89a08ab9c77434ca7b8b116498317ecac8f2d9" datatype="html">
         <source>WELCOME</source>
+        <target>WELCOME (en)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.ts</context>
           <context context-type="linenumber">3</context>
